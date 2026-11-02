@@ -24,11 +24,11 @@
     <rotation>horizontal</rotation>
     <name>Midnight Resistance (Twin Stick)</name>
     <setname>midres</setname>
-    <mameversion>0282</mameversion>
+    <mameversion>0289</mameversion>
     <year>1989</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
-    <rbf>Arcade-MidnightResistanceTwinStick</rbf>
+    <rbf>Arcade-MidnightResistanceTwinStick_20261102</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="midres.zip" md5="None">
