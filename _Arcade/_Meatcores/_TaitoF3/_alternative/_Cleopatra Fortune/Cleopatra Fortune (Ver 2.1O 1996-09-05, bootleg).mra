@@ -1,0 +1,52 @@
+<misterromdescription>
+  <name>Cleopatra Fortune (Ver 2.1O 1996/09/05, bootleg)</name>
+  <setname>cleopatro</setname>
+  <mameversion>0288</mameversion>
+  <year>1996</year>
+  <manufacturer>bootleg</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from cleopatr. -->
+  <rom index="0" md5="None" zip="cleopatro.zip|cleopatr.zip">
+    <interleave output="32">
+      <part name="ic20.bin" crc="80dfc893" length="0x20000" map="0001" />
+      <part name="ic19.bin" crc="666e8ca6" length="0x20000" map="0010" />
+      <part name="ic18.bin" crc="9f2d4f69" length="0x20000" map="0100" />
+      <part name="ic17.bin" crc="f892f60e" length="0x20000" map="1000" />
+    </interleave>
+    <part repeat="1572864">00</part>
+    <interleave output="16">
+      <part name="e28-11.bin" crc="01a06950" length="0x20000" map="01" />
+      <part name="e28-12.bin" crc="dc19260f" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e28-11.bin" crc="01a06950" length="0x20000" map="01" />
+      <part name="e28-12.bin" crc="dc19260f" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e28-02.bin" crc="b20d47cb" length="0x80000" map="01" />
+      <part name="e28-01.bin" crc="4440e659" length="0x80000" map="10" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e28-06.bin" crc="21d0c454" length="0x100000" map="0021" />
+      <part name="e28-05.bin" crc="2870dbbc" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e28-04.bin" crc="57aef029" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="e28-03.bin" crc="15c7989d" length="0x200000" />
+    <part repeat="2097152">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>64</part>
+  </rom>
+  <rom index="2">
+    <part>01</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Rotate,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

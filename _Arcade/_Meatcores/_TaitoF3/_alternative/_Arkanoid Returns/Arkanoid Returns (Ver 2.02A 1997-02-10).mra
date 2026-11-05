@@ -1,0 +1,49 @@
+<misterromdescription>
+  <name>Arkanoid Returns (Ver 2.02A 1997/02/10)</name>
+  <setname>arkretrnu</setname>
+  <mameversion>0288</mameversion>
+  <year>1997</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from arkretrn. -->
+  <rom index="0" md5="None" zip="arkretrnu.zip|arkretrn.zip">
+    <interleave output="32">
+      <part name="e36-11.20" crc="b50cfb92" length="0x40000" map="0001" />
+      <part name="e36-10.19" crc="c940dba1" length="0x40000" map="0010" />
+      <part name="e36-09.18" crc="f16985e0" length="0x40000" map="0100" />
+      <part name="e36-14.17" crc="3360cfa1" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="e36-12.32" crc="3bae39be" length="0x40000" map="01" />
+      <part name="e36-13.33" crc="94448e82" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e36-03.12" crc="1ea8558b" length="0x40000" map="01" />
+      <part name="e36-02.8" crc="694eda31" length="0x40000" map="10" />
+    </interleave>
+    <part repeat="3670016">00</part>
+    <part name="e36-01.4" crc="54b9b2cd" length="0x40000" />
+    <part repeat="1835008">00</part>
+    <interleave output="32">
+      <part name="e36-07.47" crc="266bf1c1" length="0x80000" map="0021" />
+      <part name="e36-06.45" crc="110ab729" length="0x80000" map="2100" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part name="e36-05.43" crc="db18bce2" length="0x80000" />
+    <part repeat="1572864">00</part>
+    <part name="e36-04.38" crc="2250959b" length="0x200000" />
+    <part repeat="2097152">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>03</part>
+  </rom>
+  <rom index="2">
+    <part>01</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Fire,Slow,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

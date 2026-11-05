@@ -1,0 +1,52 @@
+<misterromdescription>
+  <name>Ring Rage (Ver 2.3A 1992/08/09)</name>
+  <setname>ringrageu</setname>
+  <mameversion>0288</mameversion>
+  <year>1992</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from ringrage. -->
+  <rom index="0" md5="None" zip="ringrageu.zip|ringrage.zip">
+    <interleave output="32">
+      <part name="d21-23.40" crc="14e9ed65" length="0x40000" map="0001" />
+      <part name="d21-22.38" crc="6f8b65b0" length="0x40000" map="0010" />
+      <part name="d21-21.36" crc="bf7234bc" length="0x40000" map="0100" />
+      <part name="d21-24.34" crc="404dee67" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d21-18.5" crc="133b55d0" length="0x20000" map="01" />
+      <part name="d21-19.6" crc="1f98908f" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d21-18.5" crc="133b55d0" length="0x20000" map="01" />
+      <part name="d21-19.6" crc="1f98908f" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d21-02.66" crc="facd3a02" length="0x200000" map="01" />
+      <part name="d21-03.67" crc="6f653e68" length="0x200000" map="10" />
+    </interleave>
+    <part name="d21-04.68" crc="9dcdceca" length="0x200000" />
+    <interleave output="32">
+      <part name="d21-06.49" crc="92d4a720" length="0x80000" map="0021" />
+      <part name="d21-07.50" crc="6da696e9" length="0x80000" map="2100" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part name="d21-08.51" crc="a0d95be9" length="0x80000" />
+    <part repeat="1572864">00</part>
+    <part name="d21-01.17" crc="1fb6f07d" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d21-05.18" crc="ed894fe1" length="0x100000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>A4</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Punch,Kick,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

@@ -1,0 +1,46 @@
+<misterromdescription>
+  <name>Bubble Symphony (Ver 2.5A 1994/10/05)</name>
+  <setname>bubsymphu</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from bublbob2. -->
+  <rom index="0" md5="None" zip="bubsymphu.zip|bublbob2.zip">
+    <interleave output="32">
+      <part name="d90-12" crc="9e523996" length="0x40000" map="0001" />
+      <part name="d90-11" crc="edfdbb7f" length="0x40000" map="0010" />
+      <part name="d90-10" crc="8e957d3d" length="0x40000" map="0100" />
+      <part name="d90-15" crc="06182802" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d90-13.ic32" crc="6762bd90" length="0x40000" map="01" />
+      <part name="d90-14.ic33" crc="8e33357e" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d90-03" crc="6fa894a1" length="0x100000" map="01" />
+      <part name="d90-02" crc="5ab04ca2" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="d90-01" crc="8aedb9e5" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="d90-08" crc="25a4fb2c" length="0x100000" map="0021" />
+      <part name="d90-07" crc="b436b42d" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="d90-06" crc="166a72b8" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="d90-04" crc="feee5fda" length="0x200000" />
+    <part name="d90-05" crc="c192331f" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>80</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

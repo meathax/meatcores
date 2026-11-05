@@ -1,0 +1,59 @@
+<misterromdescription>
+  <name>Dungeon Magic (Ver 2.1A 1994/02/18)</name>
+  <setname>dungeonmu</setname>
+  <mameversion>0288</mameversion>
+  <year>1993</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from lightbr. -->
+  <rom index="0" md5="None" zip="dungeonmu.zip|lightbr.zip">
+    <interleave output="32">
+      <part name="d69-20.bin" crc="33650fe4" length="0x80000" map="0001" />
+      <part name="d69-13.bin" crc="dec2ec17" length="0x80000" map="0010" />
+      <part name="d69-15.bin" crc="323e1955" length="0x80000" map="0100" />
+      <part name="d69-21.bin" crc="c9d4e051" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="d69-18.bin" crc="04600d7b" length="0x20000" map="01" />
+      <part name="d69-19.bin" crc="1484e853" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d69-18.bin" crc="04600d7b" length="0x20000" map="01" />
+      <part name="d69-19.bin" crc="1484e853" length="0x20000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="d69-06.bin" crc="cb4aac81" length="0x200000" map="01" />
+      <part name="d69-07.bin" crc="b749f984" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d69-09.bin" crc="a96c19b8" length="0x100000" map="01" />
+      <part name="d69-10.bin" crc="36aa80c6" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="7340032">00</part>
+    <part name="d69-08.bin" crc="5b68d7d8" length="0x200000" />
+    <part name="d69-11.bin" crc="c11adf92" length="0x100000" />
+    <part repeat="4194304">00</part>
+    <interleave output="32">
+      <part name="d69-03.bin" crc="6999c86f" length="0x200000" map="0021" />
+      <part name="d69-04.bin" crc="cc91dcb7" length="0x200000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="d69-05.bin" crc="f9f5433c" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d69-01.bin" crc="9ac93ac2" length="0x200000" />
+    <part name="d69-02.bin" crc="dce28dd7" length="0x200000" />
+    <part repeat="4194304">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>A0</part>
+  </rom>
+  <rom index="2">
+    <part>13</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

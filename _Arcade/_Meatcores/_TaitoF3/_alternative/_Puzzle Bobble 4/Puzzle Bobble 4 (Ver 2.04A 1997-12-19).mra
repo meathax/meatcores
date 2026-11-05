@@ -1,0 +1,49 @@
+<misterromdescription>
+  <name>Puzzle Bobble 4 (Ver 2.04A 1997/12/19)</name>
+  <setname>pbobble4u</setname>
+  <mameversion>0288</mameversion>
+  <year>1997</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from pbobble4. -->
+  <rom index="0" md5="None" zip="pbobble4u.zip|pbobble4.zip">
+    <interleave output="32">
+      <part name="e49-12.20" crc="fffea203" length="0x80000" map="0001" />
+      <part name="e49-11.19" crc="bf69a087" length="0x80000" map="0010" />
+      <part name="e49-10.18" crc="0307460b" length="0x80000" map="0100" />
+      <part name="e49-15.17" crc="7d0526b2" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e49-13.32" crc="83536f7f" length="0x40000" map="01" />
+      <part name="e49-14.33" crc="19815bdb" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e49-02" crc="c7d2f40b" length="0x100000" map="01" />
+      <part name="e49-01" crc="a3dd5f85" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e49-08" crc="87408106" length="0x100000" map="0021" />
+      <part name="e49-07" crc="1e1e8e1c" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e49-06" crc="ec85f7ce" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part repeat="2097152">00</part>
+    <part name="e49-03" crc="f64303e0" length="0x200000" />
+    <part name="e49-04" crc="09be229c" length="0x200000" />
+    <part name="e49-05" crc="5ce90ee2" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>87</part>
+  </rom>
+  <rom index="2">
+    <part>01</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

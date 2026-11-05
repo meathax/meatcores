@@ -1,0 +1,51 @@
+<misterromdescription>
+  <name>Riding Fight (Ver 1.0J)</name>
+  <setname>ridingfj</setname>
+  <mameversion>0288</mameversion>
+  <year>1992</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from ridingf. -->
+  <rom index="0" md5="None" zip="ridingfj.zip|ridingf.zip">
+    <interleave output="32">
+      <part name="d34-12.40" crc="e67e69d4" length="0x40000" map="0001" />
+      <part name="d34-11.38" crc="7d240a88" length="0x40000" map="0010" />
+      <part name="d34-10.36" crc="8aa3f4ac" length="0x40000" map="0100" />
+      <part name="d34-09.34" crc="0e0e78a2" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d34-07.5" crc="67239e2b" length="0x20000" map="01" />
+      <part name="d34-08.6" crc="2cf20323" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d34-07.5" crc="67239e2b" length="0x20000" map="01" />
+      <part name="d34-08.6" crc="2cf20323" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d34-01.66" crc="7974e6aa" length="0x200000" map="01" />
+      <part name="d34-02.67" crc="f4422370" length="0x200000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="d34-05.49" crc="72e3ee4b" length="0x80000" map="0021" />
+      <part name="d34-06.50" crc="edc9b9f3" length="0x80000" map="2100" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part repeat="2097152">00</part>
+    <part name="d34-03.17" crc="e534ef74" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d34-04.18" crc="ed894fe1" length="0x100000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>61</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

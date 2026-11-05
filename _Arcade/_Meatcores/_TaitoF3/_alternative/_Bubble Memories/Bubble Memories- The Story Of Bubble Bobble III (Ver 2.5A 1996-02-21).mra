@@ -1,0 +1,48 @@
+<misterromdescription>
+  <name>Bubble Memories: The Story Of Bubble Bobble III (Ver 2.5A 1996/02/21)</name>
+  <setname>bubblemu</setname>
+  <mameversion>0288</mameversion>
+  <year>1995</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from bubblem. -->
+  <rom index="0" md5="None" zip="bubblemu.zip|bubblem.zip">
+    <interleave output="32">
+      <part name="e21-17.20" crc="0b72e8f1" length="0x80000" map="0001" />
+      <part name="e21-16.19" crc="b47354cc" length="0x80000" map="0010" />
+      <part name="e21-15.18" crc="64bf2c24" length="0x80000" map="0100" />
+      <part name="e21-14.17" crc="48aecd47" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e21-12.32" crc="34093de1" length="0x40000" map="01" />
+      <part name="e21-13.33" crc="9e9ec437" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e21-02.rom" crc="b7cb9232" length="0x200000" map="01" />
+      <part name="e21-01.rom" crc="a11f2f99" length="0x200000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e21-07.rom" crc="7789bf7c" length="0x100000" map="0021" />
+      <part name="e21-06.rom" crc="997fc0d7" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e21-05.rom" crc="07eab58f" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="e21-03.rom" crc="54c5f83d" length="0x200000" />
+    <part name="e21-04.rom" crc="e5af2a2d" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>C0</part>
+  </rom>
+  <!-- Factory EEPROM before saved NVRAM: required for a valid first boot. -->
+  <rom index="254" zip="bubblemu.zip|bubblem.zip" md5="None">
+    <part name="bubblemu.nv" crc="a503276c" />
+    <part repeat="128">FF</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

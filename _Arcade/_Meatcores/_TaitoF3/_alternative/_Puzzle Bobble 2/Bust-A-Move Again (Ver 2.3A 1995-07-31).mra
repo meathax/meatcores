@@ -1,0 +1,45 @@
+<misterromdescription>
+  <name>Bust-A-Move Again (Ver 2.3A 1995/07/31)</name>
+  <setname>pbobble2u</setname>
+  <mameversion>0288</mameversion>
+  <year>1995</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from pbobble2j. -->
+  <rom index="0" md5="None" zip="pbobble2u.zip|pbobble2.zip">
+    <interleave output="32">
+      <part name="e10-20.20" crc="97eb15c6" length="0x40000" map="0001" />
+      <part name="e10-19.19" crc="7082d796" length="0x40000" map="0010" />
+      <part name="e10-18.18" crc="2ffa3ef2" length="0x40000" map="0100" />
+      <part name="e10-14.17" crc="4a19ed67" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="e10-16.32" crc="765ce77a" length="0x40000" map="01" />
+      <part name="e10-17.33" crc="0aec3b1e" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e10-02.rom" crc="c0564490" length="0x100000" map="01" />
+      <part name="e10-01.rom" crc="8c26ff49" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e10-07.rom" crc="dcb3c29b" length="0x100000" map="0021" />
+      <part name="e10-06.rom" crc="1b0f20e2" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e10-05.rom" crc="81266151" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="e10-04.rom" crc="5c0862a6" length="0x200000" />
+    <part name="e10-03.rom" crc="46d68ac8" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>67</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

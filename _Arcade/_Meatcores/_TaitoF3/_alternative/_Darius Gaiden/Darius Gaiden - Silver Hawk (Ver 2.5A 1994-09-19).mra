@@ -1,0 +1,44 @@
+<misterromdescription>
+  <name>Darius Gaiden - Silver Hawk (Ver 2.5A 1994/09/19)</name>
+  <setname>dariusgu</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from dariusg. -->
+  <rom index="0" md5="None" zip="dariusgu.zip|dariusg.zip">
+    <interleave output="32">
+      <part name="d87-12.bin" crc="de78f328" length="0x80000" map="0001" />
+      <part name="d87-11.bin" crc="f7bed18e" length="0x80000" map="0010" />
+      <part name="d87-10.bin" crc="4149f66f" length="0x80000" map="0100" />
+      <part name="d87-15.bin" crc="f8796997" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="d87-13.bin" crc="15b1fff4" length="0x40000" map="01" />
+      <part name="d87-14.bin" crc="eecda29a" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d87-03.bin" crc="4be1666e" length="0x200000" map="01" />
+      <part name="d87-04.bin" crc="2616002c" length="0x200000" map="10" />
+    </interleave>
+    <part name="d87-05.bin" crc="4e5891a9" length="0x200000" />
+    <interleave output="32">
+      <part name="d87-06.bin" crc="3b97a07c" length="0x200000" map="0021" />
+      <part name="d87-17.bin" crc="e601d63e" length="0x200000" map="2100" />
+    </interleave>
+    <part name="d87-08.bin" crc="76d23602" length="0x200000" />
+    <part name="d87-01.bin" crc="3848a110" length="0x200000" />
+    <part name="d87-02.bin" crc="9250abae" length="0x200000" />
+  </rom>
+  <category>Shoot</category>
+  <resolution>15kHz</resolution>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <num_buttons>2</num_buttons>
+  <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+  <rom index="1">
+    <part>27</part>
+  </rom>
+  <nvram index="254" size="256" />
+</misterromdescription>

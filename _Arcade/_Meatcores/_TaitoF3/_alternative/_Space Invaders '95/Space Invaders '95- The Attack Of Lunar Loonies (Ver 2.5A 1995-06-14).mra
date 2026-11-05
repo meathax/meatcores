@@ -1,0 +1,49 @@
+<misterromdescription>
+  <name>Space Invaders '95: The Attack Of Lunar Loonies (Ver 2.5A 1995/06/14)</name>
+  <setname>spcinv95u</setname>
+  <mameversion>0288</mameversion>
+  <year>1995</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>vertical (ccw)</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from spcinv95. -->
+  <rom index="0" md5="None" zip="spcinv95u.zip|spcinv95.zip">
+    <interleave output="32">
+      <part name="e06-14.20" crc="71ba7f00" length="0x20000" map="0001" />
+      <part name="e06-13.19" crc="f506ba4b" length="0x20000" map="0010" />
+      <part name="e06-12.18" crc="06cbd72b" length="0x20000" map="0100" />
+      <part name="e06-15.17" crc="a6ec0103" length="0x20000" map="1000" />
+    </interleave>
+    <part repeat="1572864">00</part>
+    <interleave output="16">
+      <part name="e06-09.32" crc="9bcafc87" length="0x40000" map="01" />
+      <part name="e06-10.33" crc="b752b61f" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e06-03" crc="a24070ef" length="0x100000" map="01" />
+      <part name="e06-02" crc="8f646dea" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e06-01" crc="51721b15" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="e06-08" crc="72ae2fbf" length="0x100000" map="0021" />
+      <part name="e06-07" crc="4b02e8f5" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e06-06" crc="9380db3c" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="e06-04" crc="1dac29df" length="0x200000" />
+    <part name="e06-05" crc="f370ff15" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>24</part>
+  </rom>
+  <rom index="2">
+    <part>01</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

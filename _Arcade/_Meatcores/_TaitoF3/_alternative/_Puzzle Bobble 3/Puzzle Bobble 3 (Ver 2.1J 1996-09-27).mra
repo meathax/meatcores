@@ -1,0 +1,49 @@
+<misterromdescription>
+  <name>Puzzle Bobble 3 (Ver 2.1J 1996/09/27)</name>
+  <setname>pbobble3j</setname>
+  <mameversion>0288</mameversion>
+  <year>1996</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from pbobble3. -->
+  <rom index="0" md5="None" zip="pbobble3j.zip|pbobble3.zip">
+    <interleave output="32">
+      <part name="e29-12.ic20" crc="9eb19a00" length="0x80000" map="0001" />
+      <part name="e29-11.ic19" crc="e54ada97" length="0x80000" map="0010" />
+      <part name="e29-10.ic18" crc="1502a122" length="0x80000" map="0100" />
+      <part name="e29-09.ic17" crc="44ccf2f6" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e29-13.ic32" crc="1ef551ef" length="0x40000" map="01" />
+      <part name="e29-14.ic33" crc="7ee7e688" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e29-02.ic8" crc="437391d3" length="0x100000" map="01" />
+      <part name="e29-01.ic12" crc="52547c77" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e29-08.ic47" crc="7040a3d5" length="0x100000" map="0021" />
+      <part name="e29-07.ic45" crc="fca2ea9b" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e29-06.ic43" crc="c16184f8" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part repeat="2097152">00</part>
+    <part name="e29-03.ic38" crc="a4371658" length="0x200000" />
+    <part name="e29-04.ic39" crc="d1f42457" length="0x200000" />
+    <part name="e29-05.ic41" crc="e33c1234" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>47</part>
+  </rom>
+  <rom index="2">
+    <part>01</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

@@ -1,0 +1,65 @@
+<misterromdescription>
+  <name>Gunlock (Ver 2.0O 1993/12/15)</name>
+  <setname>gunlocko</setname>
+  <mameversion>0288</mameversion>
+  <year>1993</year>
+  <manufacturer>Taito Corporation Japan</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>vertical (ccw)</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from gunlock. -->
+  <rom index="0" md5="None" zip="gunlocko.zip|gunlock.zip">
+    <interleave output="32">
+      <part name="ic24.ic24" crc="c6a89434" length="0x40000" map="0001" />
+      <part name="ic26.ic26" crc="0d1dd41d" length="0x40000" map="0010" />
+      <part name="ic37.ic37" crc="94bc17fe" length="0x40000" map="0100" />
+      <part name="ic35.ic35" crc="ca47e1cd" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d66-23.ic10" crc="57fb7c49" length="0x40000" map="01" />
+      <part name="d66-22.ic23" crc="83dd7f9b" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="lobj0-l.ic33" crc="5fde6dbb" length="0x80000" map="01" />
+      <part name="lobj0-m.ic25" crc="d308db27" length="0x80000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="lobj1-l.ic32" crc="83d76f4b" length="0x80000" map="01" />
+      <part name="lobj1-m.ic24" crc="5034a854" length="0x80000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="lobj0-h.ic16" crc="8899db2e" length="0x80000" />
+    <part name="lobj1-h.ic15" crc="0607fd85" length="0x80000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="scr0-0.ic40" crc="1c429d92" length="0x80000" map="0001" />
+      <part name="scr0-1.ic46" crc="5f0cb8bf" length="0x80000" map="0010" />
+      <part name="scr0-2.ic38" crc="e023c0f0" length="0x80000" map="0100" />
+      <part name="scr0-3.ic44" crc="37bbdbb9" length="0x80000" map="1000" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <interleave output="16">
+      <part name="scr0-4.ic36" crc="4f073d71" length="0x80000" map="01" />
+      <part repeat="524288" map="10">00</part>
+    </interleave>
+    <part repeat="1048576">00</part>
+    <part name="snd0.ic8" crc="6a468f69" length="0x80000" />
+    <part name="snd1.ic7" crc="332827b5" length="0x80000" />
+    <part name="snd2.ic6" crc="b5e737dd" length="0x80000" />
+    <part name="snd3.ic5" crc="2ed54463" length="0x80000" />
+    <part name="snd4.ic4" crc="1026ca37" length="0x80000" />
+    <part name="snd5.ic3" crc="a916ac40" length="0x80000" />
+    <part name="snd6.ic2" crc="26312451" length="0x80000" />
+    <part name="snd7.ic1" crc="2edaa9dc" length="0x80000" />
+  </rom>
+  <category>Shoot</category>
+  <resolution>15kHz</resolution>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <num_buttons>2</num_buttons>
+  <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+  <rom index="1">
+    <part>A0</part>
+  </rom>
+  <nvram index="254" size="256" />
+</misterromdescription>

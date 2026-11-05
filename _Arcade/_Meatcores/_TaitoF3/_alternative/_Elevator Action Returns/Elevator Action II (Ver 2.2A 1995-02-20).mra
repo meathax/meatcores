@@ -1,0 +1,41 @@
+<misterromdescription>
+  <name>Elevator Action II (Ver 2.2A 1995/02/20)</name>
+  <setname>elvact2u</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from elvactr. -->
+  <rom index="0" md5="None" zip="elvact2u.zip|elvactr.zip">
+    <interleave output="32">
+      <part name="e02-12.20" crc="ea5f5a32" length="0x80000" map="0001" />
+      <part name="e02-11.19" crc="bcced8ff" length="0x80000" map="0010" />
+      <part name="e02-10.18" crc="72f1b952" length="0x80000" map="0100" />
+      <part name="e02-15.17" crc="ba9028bd" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e02-13.32" crc="80932702" length="0x40000" map="01" />
+      <part name="e02-14.33" crc="706671a5" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e02-03.12" crc="c884ebb5" length="0x200000" map="01" />
+      <part name="e02-02.8" crc="c8e06cfb" length="0x200000" map="10" />
+    </interleave>
+    <part name="e02-01.4" crc="2ba94726" length="0x200000" />
+    <interleave output="32">
+      <part name="e02-08.47" crc="29c9bd02" length="0x200000" map="0021" />
+      <part name="e02-07.45" crc="5eeee925" length="0x200000" map="2100" />
+    </interleave>
+    <part name="e02-06.43" crc="4c8726e9" length="0x200000" />
+    <part name="e02-04.38" crc="b74307af" length="0x200000" />
+    <part name="e02-05.39" crc="eb729855" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>43</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

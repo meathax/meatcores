@@ -1,0 +1,69 @@
+<misterromdescription>
+  <name>Global Champion (Ver 2.1A 1994/07/29)</name>
+  <setname>gblchmp</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from kaiserkn. -->
+  <rom index="0" md5="None" zip="gblchmp.zip|kaiserkn.zip">
+    <interleave output="32">
+      <part name="d84-25.20" crc="2840893f" length="0x80000" map="0001" />
+      <part name="d84-24.19" crc="bf20c755" length="0x80000" map="0010" />
+      <part name="d84-23.18" crc="39f12a9b" length="0x80000" map="0100" />
+      <part name="d84-28.17" crc="ef26c1ec" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="d84-26.32" crc="4f5b8563" length="0x40000" map="01" />
+      <part name="d84-27.33" crc="fb0cb1ba" length="0x40000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="d84-03.rom" crc="d786f552" length="0x200000" map="01" />
+      <part name="d84-04.rom" crc="d1f32b5d" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d84-06.rom" crc="fa924dab" length="0x200000" map="01" />
+      <part name="d84-07.rom" crc="54517a6b" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d84-09.rom" crc="faa78d98" length="0x200000" map="01" />
+      <part name="d84-10.rom" crc="b84b7320" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d84-19.rom" crc="6ddf77e5" length="0x80000" map="01" />
+      <part name="d84-20.rom" crc="f85041e5" length="0x80000" map="10" />
+    </interleave>
+    <part name="d84-05.rom" crc="31a3c75d" length="0x200000" />
+    <part name="d84-08.rom" crc="07347bf1" length="0x200000" />
+    <part name="d84-11.rom" crc="a062c1d4" length="0x200000" />
+    <part name="d84-21.rom" crc="89f68b66" length="0x80000" />
+    <part repeat="524288">00</part>
+    <interleave output="32">
+      <part name="d84-12.rom" crc="66a7a9aa" length="0x200000" map="0021" />
+      <part name="d84-13.rom" crc="ae125516" length="0x200000" map="2100" />
+    </interleave>
+    <interleave output="32">
+      <part name="d84-16.rom" crc="bcff9b2d" length="0x100000" map="0021" />
+      <part name="d84-17.rom" crc="0be37cc3" length="0x100000" map="2100" />
+    </interleave>
+    <part name="d84-14.rom" crc="2b2e693e" length="0x200000" />
+    <part name="d84-18.rom" crc="e812bcc5" length="0x100000" />
+    <part repeat="2097152">00</part>
+    <part name="d84-01.rom" crc="9ad22149" length="0x200000" />
+    <part name="d84-02.rom" crc="9e1827e4" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d84-15.rom" crc="31ceb152" length="0x100000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>84</part>
+  </rom>
+  <rom index="2">
+    <part>14</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Light Punch,Medium Punch,Heavy Punch,Light Kick,Medium Kick,Heavy Kick,Start,Coin,Service,Pause" default="Y,X,L,B,A,R,Start,Select,-" count="6" />
+</misterromdescription>

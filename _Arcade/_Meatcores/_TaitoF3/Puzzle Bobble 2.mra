@@ -1,0 +1,46 @@
+<misterromdescription>
+  <name>Puzzle Bobble 2 (Ver 2.3O 1995/07/31)</name>
+  <setname>pbobble2</setname>
+  <mameversion>0288</mameversion>
+  <year>1995</year>
+  <manufacturer>Taito Corporation Japan</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from pbobble2j. -->
+  <rom index="0" md5="None" zip="pbobble2.zip">
+    <interleave output="32">
+      <part name="e10-24.bin" crc="f9d0794b" length="0x40000" map="0001" />
+      <part name="e10-23.bin" crc="56a66435" length="0x40000" map="0010" />
+      <part name="e10-22.bin" crc="7b12105d" length="0x40000" map="0100" />
+      <part name="e10-25.bin" crc="ff0407d3" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="e10-12.32" crc="b92dc8ad" length="0x40000" map="01" />
+      <part name="e10-13.33" crc="87842c13" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e10-02.rom" crc="c0564490" length="0x100000" map="01" />
+      <part name="e10-01.rom" crc="8c26ff49" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part repeat="2097152">00</part>
+    <interleave output="32">
+      <part name="e10-07.rom" crc="dcb3c29b" length="0x100000" map="0021" />
+      <part name="e10-06.rom" crc="1b0f20e2" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e10-05.rom" crc="81266151" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <part name="e10-04.rom" crc="5c0862a6" length="0x200000" />
+    <part name="e10-03.rom" crc="46d68ac8" length="0x200000" />
+    <patch offset="0x40092">4e 71 4e 71 4e 71</patch>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>67</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

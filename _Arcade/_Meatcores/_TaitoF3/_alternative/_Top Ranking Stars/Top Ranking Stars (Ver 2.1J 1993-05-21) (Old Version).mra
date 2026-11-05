@@ -1,0 +1,60 @@
+<misterromdescription>
+  <name>Top Ranking Stars (Ver 2.1J 1993/05/21) (Old Version)</name>
+  <setname>trstaroj</setname>
+  <mameversion>0288</mameversion>
+  <year>1993</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from trstar. -->
+  <rom index="0" md5="None" zip="trstaroj.zip|trstar.zip">
+    <interleave output="32">
+      <part name="d53-15.24" crc="f24de51b" length="0x40000" map="0001" />
+      <part name="d53-16.26" crc="ffc84429" length="0x40000" map="0010" />
+      <part name="d53-18.37" crc="ea2d6e13" length="0x40000" map="0100" />
+      <part name="d53-17.35" crc="99ef934b" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d53-13.10" crc="877f0361" length="0x20000" map="01" />
+      <part name="d53-14.23" crc="a8664867" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d53-13.10" crc="877f0361" length="0x20000" map="01" />
+      <part name="d53-14.23" crc="a8664867" length="0x20000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="d53-03.45" crc="91b66145" length="0x200000" map="01" />
+      <part name="d53-04.46" crc="ac3a5e80" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d53-06.64" crc="f4bac410" length="0x100000" map="01" />
+      <part name="d53-07.65" crc="2f4773c3" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="7340032">00</part>
+    <part name="d53-05.47" crc="b9b68b15" length="0x200000" />
+    <part name="d53-08.66" crc="ad13a1ee" length="0x100000" />
+    <part repeat="4194304">00</part>
+    <interleave output="32">
+      <part name="d53-09.48" crc="690554d3" length="0x100000" map="0021" />
+      <part name="d53-10.49" crc="0ec05dc5" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="4194304">00</part>
+    <part name="d53-11.50" crc="39c0a546" length="0x100000" />
+    <part repeat="2097152">00</part>
+    <part name="d53-01.2" crc="28fd2d9b" length="0x200000" />
+    <part name="d53-02.3" crc="8bd4367a" length="0x200000" />
+    <part repeat="4194304">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>23</part>
+  </rom>
+  <rom index="2">
+    <part>13</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Light Punch,Medium Punch,Heavy Punch,-,-,-,Start,Coin,Service,Pause" default="A,B,X,Start,R,Select,L" count="3" />
+</misterromdescription>

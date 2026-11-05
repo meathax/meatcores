@@ -1,0 +1,61 @@
+<misterromdescription>
+  <name>Hat Trick Hero '93 (Ver 1.0J 1993/02/28)</name>
+  <setname>hthero93</setname>
+  <mameversion>0288</mameversion>
+  <year>1993</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from cupfinal. -->
+  <rom index="0" md5="None" zip="hthero93.zip|cupfinal.zip">
+    <interleave output="32">
+      <part name="d49-13.20" crc="ccee5e73" length="0x20000" map="0001" />
+      <part name="d49-14.19" crc="2323bf2e" length="0x20000" map="0010" />
+      <part name="d49-16.18" crc="8e73f739" length="0x20000" map="0100" />
+      <part name="d49-19.17" crc="f0925800" length="0x20000" map="1000" />
+    </interleave>
+    <part repeat="1572864">00</part>
+    <interleave output="16">
+      <part name="d49-17.32" crc="f2058eba" length="0x20000" map="01" />
+      <part name="d49-18.33" crc="a0fdd270" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d49-17.32" crc="f2058eba" length="0x20000" map="01" />
+      <part name="d49-18.33" crc="a0fdd270" length="0x20000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="d49-01.12" crc="1dc89f1c" length="0x200000" map="01" />
+      <part name="d49-02.8" crc="1e4c374f" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d49-06.11" crc="71ef4ee1" length="0x100000" map="01" />
+      <part name="d49-07.7" crc="e5655b8f" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="7340032">00</part>
+    <part name="d49-03.4" crc="cf9a8727" length="0x200000" />
+    <part name="d49-08.3" crc="7d3c6536" length="0x100000" />
+    <part repeat="4194304">00</part>
+    <interleave output="32">
+      <part name="d49-09.47" crc="257ede01" length="0x80000" map="0021" />
+      <part name="d49-10.45" crc="f587b787" length="0x80000" map="2100" />
+    </interleave>
+    <part repeat="5242880">00</part>
+    <part name="d49-11.43" crc="11318b26" length="0x80000" />
+    <part repeat="2621440">00</part>
+    <part name="d49-04.38" crc="44b365a9" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d49-05.41" crc="ed894fe1" length="0x100000" />
+    <part repeat="4194304">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>03</part>
+  </rom>
+  <rom index="2">
+    <part>13</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,Pass,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

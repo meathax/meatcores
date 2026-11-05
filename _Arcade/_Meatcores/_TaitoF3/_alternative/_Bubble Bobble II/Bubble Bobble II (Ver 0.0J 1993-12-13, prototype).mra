@@ -1,0 +1,55 @@
+<misterromdescription>
+  <name>Bubble Bobble II (Ver 0.0J 1993/12/13, prototype)</name>
+  <setname>bublbob2p</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito Corporation Japan</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from bublbob2. -->
+  <rom index="0" md5="None" zip="bublbob2p.zip|bublbob2.zip">
+    <interleave output="32">
+      <part name="soft-3-8c9b.ic60" crc="15d0594e" length="0x40000" map="0001" />
+      <part name="soft-2-0587.ic61" crc="d1a5231f" length="0x40000" map="0010" />
+      <part name="soft-1-9a9c.ic62" crc="c11a4d26" length="0x40000" map="0100" />
+      <part name="soft-0-a523.ic63" crc="58131f9e" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="snd-h-348f.ic66" crc="f66e60f2" length="0x20000" map="01" />
+      <part name="snd-l-4ec1.ic65" crc="d302d8bc" length="0x20000" map="10" />
+    </interleave>
+    <part repeat="262144">00</part>
+    <interleave output="16">
+      <part name="cq80-obj-0l-c166.ic8" crc="9bff223b" length="0x80000" map="01" />
+      <part name="cq80-obj-0m-24f4.ic30" crc="ee71f643" length="0x80000" map="10" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part name="cq80-obj-0h-990d.ic32" crc="4d3a78e0" length="0x80000" />
+    <part repeat="1572864">00</part>
+    <interleave output="32">
+      <part name="cq80-scr0-5ba4.ic7" crc="044dc38b" length="0x80000" map="0001" />
+      <part name="cq80-scr1-a5f3.ic6" crc="3cf3a3ba" length="0x80000" map="0010" />
+      <part name="cq80-scr2-cc11.ic5" crc="b81aa2c7" length="0x80000" map="0100" />
+      <part name="cq80-scr3-4266.ic4" crc="c114583f" length="0x80000" map="1000" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <interleave output="16">
+      <part name="cq80-scr4-7fe1.ic3" crc="2bba1728" length="0x80000" map="01" />
+      <part repeat="524288" map="10">00</part>
+    </interleave>
+    <part repeat="1048576">00</part>
+    <part name="cq80-snd-data0-7b5f.ic43" crc="bf8f26d3" length="0x80000" />
+    <part name="cq80-snd-data1-933b.ic44" crc="62b00475" length="0x80000" />
+    <part repeat="2097152">00</part>
+    <part name="cq80-snd3-std5-3a9c.ic10" crc="26312451" length="0x80000" />
+    <part name="cq80-snd2-std6-a148.ic11" crc="2edaa9dc" length="0x80000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>80</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

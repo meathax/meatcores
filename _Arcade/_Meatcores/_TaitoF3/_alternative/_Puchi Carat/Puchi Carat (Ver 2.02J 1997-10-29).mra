@@ -1,0 +1,56 @@
+<misterromdescription>
+  <name>Puchi Carat (Ver 2.02J 1997/10/29)</name>
+  <setname>puchicarj</setname>
+  <mameversion>0288</mameversion>
+  <year>1997</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from puchicar. -->
+  <rom index="0" md5="None" zip="puchicarj.zip|puchicar.zip">
+    <interleave output="32">
+      <part name="e46-16.ic20" crc="cf2accdf" length="0x80000" map="0001" />
+      <part name="e46-15.ic19" crc="c32c6ed8" length="0x80000" map="0010" />
+      <part name="e46-14.ic18" crc="a154c300" length="0x80000" map="0100" />
+      <part name="e46-13.ic17" crc="59fbdf3a" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e46-19.ic32" crc="2624eba0" length="0x40000" map="01" />
+      <part name="e46-20.ic33" crc="065e934f" length="0x40000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="e46-06.ic12" crc="b74336f2" length="0x200000" map="01" />
+      <part name="e46-04.ic8" crc="463ecc4c" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e46-05.ic11" crc="83a32eee" length="0x200000" map="01" />
+      <part name="e46-03.ic7" crc="eb768193" length="0x200000" map="10" />
+    </interleave>
+    <part repeat="5242880">00</part>
+    <part name="e46-02.ic4" crc="fb046018" length="0x200000" />
+    <part name="e46-01.ic3" crc="34fc2103" length="0x200000" />
+    <part repeat="3145728">00</part>
+    <interleave output="32">
+      <part name="e46-12.ic47" crc="1f3a9851" length="0x100000" map="0021" />
+      <part name="e46-11.ic45" crc="e9f10bf1" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="4194304">00</part>
+    <part name="e46-10.ic43" crc="1999b76a" length="0x100000" />
+    <part repeat="2097152">00</part>
+    <part repeat="2097152">00</part>
+    <part name="e46-07.ic38" crc="f20af91e" length="0x200000" />
+    <part name="e46-08.ic39" crc="f7f96e1d" length="0x200000" />
+    <part name="e46-09.ic40" crc="824135f8" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>43</part>
+  </rom>
+  <rom index="2">
+    <part>14</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Launch,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

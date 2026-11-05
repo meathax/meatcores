@@ -1,0 +1,61 @@
+<misterromdescription>
+  <name>Hat Trick Hero '95 (Ver 2.5J 1994/11/03)</name>
+  <setname>hthero95</setname>
+  <mameversion>0288</mameversion>
+  <year>1994</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from pwrgoal. -->
+  <rom index="0" md5="None" zip="hthero95.zip|pwrgoal.zip">
+    <interleave output="32">
+      <part name="d94-18.20" crc="b92681c3" length="0x40000" map="0001" />
+      <part name="d94-17.19" crc="6009333e" length="0x40000" map="0010" />
+      <part name="d94-16.18" crc="c6dbc9c8" length="0x40000" map="0100" />
+      <part name="d94-15.17" crc="187c85ab" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d94-19.bin" crc="c93dbcf4" length="0x40000" map="01" />
+      <part name="d94-20.bin" crc="f232bf64" length="0x40000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="d94-09.bin" crc="425e6bec" length="0x200000" map="01" />
+      <part name="d94-06.bin" crc="0ed1df55" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d94-08.bin" crc="bd909caf" length="0x200000" map="01" />
+      <part name="d94-05.bin" crc="121c8542" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d94-07.bin" crc="c8c95e49" length="0x200000" map="01" />
+      <part name="d94-04.bin" crc="24958b50" length="0x200000" map="10" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <part name="d94-03.bin" crc="95e32072" length="0x200000" />
+    <part name="d94-02.bin" crc="f460b9ac" length="0x200000" />
+    <part name="d94-01.bin" crc="410ffccd" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="d94-14.bin" crc="b8ba5761" length="0x100000" map="0021" />
+      <part name="d94-13.bin" crc="cafc68ce" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="4194304">00</part>
+    <part name="d94-12.bin" crc="47064189" length="0x100000" />
+    <part repeat="2097152">00</part>
+    <part name="d94-10.bin" crc="a22563ae" length="0x200000" />
+    <part name="d94-11.bin" crc="61ed83fa" length="0x200000" />
+    <part repeat="4194304">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>C3</part>
+  </rom>
+  <rom index="2">
+    <part>13</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,Pass,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

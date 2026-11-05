@@ -1,0 +1,60 @@
+<misterromdescription>
+  <name>Twin Cobra II (Ver 2.1A 1995/11/30)</name>
+  <setname>tcobra2u</setname>
+  <mameversion>0288</mameversion>
+  <year>1995</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>vertical (ccw)</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from tcobra2. -->
+  <rom index="0" md5="None" zip="tcobra2u.zip|tcobra2.zip">
+    <interleave output="32">
+      <part name="e15-14.ic20" crc="b527b733" length="0x40000" map="0001" />
+      <part name="e15-13.ic19" crc="0f03daf7" length="0x40000" map="0010" />
+      <part name="e15-12.ic18" crc="59d832f2" length="0x40000" map="0100" />
+      <part name="e15-17.ic17" crc="3e0ff33c" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="e15-15.ic32" crc="22126dfb" length="0x20000" map="01" />
+      <part name="e15-16.ic33" crc="f8b58ea0" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e15-15.ic32" crc="22126dfb" length="0x20000" map="01" />
+      <part name="e15-16.ic33" crc="f8b58ea0" length="0x20000" map="10" />
+    </interleave>
+    <part repeat="2621440">00</part>
+    <interleave output="16">
+      <part name="e15-04.ic12" crc="6ea8d9bd" length="0x200000" map="01" />
+      <part name="e15-02.ic8" crc="bf1232aa" length="0x200000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e15-03.ic11" crc="be45a52f" length="0x100000" map="01" />
+      <part name="e15-01.ic7" crc="85421aac" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="7340032">00</part>
+    <part repeat="7340032">00</part>
+    <interleave output="32">
+      <part name="e15-10.ic47" crc="d8c96b00" length="0x200000" map="0021" />
+      <part name="e15-08.ic45" crc="4bdb2bf3" length="0x200000" map="2100" />
+    </interleave>
+    <interleave output="32">
+      <part name="e15-09.ic46" crc="07c29f60" length="0x100000" map="0021" />
+      <part name="e15-07.ic44" crc="8164f7ee" length="0x100000" map="2100" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part name="e15-05.ic38" crc="3e5da5f6" length="0x200000" />
+    <part name="e15-06.ic41" crc="b182a3e1" length="0x200000" />
+    <part repeat="4194304">00</part>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>07</part>
+  </rom>
+  <rom index="2">
+    <part>14</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Service,Pause" default="A,B,Start,R,Select,L" count="2" />
+</misterromdescription>

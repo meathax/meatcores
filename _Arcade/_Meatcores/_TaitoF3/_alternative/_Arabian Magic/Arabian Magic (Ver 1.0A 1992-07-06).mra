@@ -1,0 +1,54 @@
+<misterromdescription>
+  <name>Arabian Magic (Ver 1.0A 1992/07/06)</name>
+  <setname>arabianmu</setname>
+  <mameversion>0288</mameversion>
+  <year>1992</year>
+  <manufacturer>Taito America Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from arabianm. -->
+  <rom index="0" md5="None" zip="arabianmu.zip|arabianm.zip">
+    <interleave output="32">
+      <part name="d29-23.ic40" crc="89a0c706" length="0x40000" map="0001" />
+      <part name="d29-22.ic38" crc="4afc22a4" length="0x40000" map="0010" />
+      <part name="d29-21.ic36" crc="ac32eb38" length="0x40000" map="0100" />
+      <part name="d29-24.ic34" crc="ceb1627b" length="0x40000" map="1000" />
+    </interleave>
+    <part repeat="1048576">00</part>
+    <interleave output="16">
+      <part name="d29-18.ic5" crc="d97780df" length="0x20000" map="01" />
+      <part name="d29-19.ic6" crc="b1ad365c" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d29-18.ic5" crc="d97780df" length="0x20000" map="01" />
+      <part name="d29-19.ic6" crc="b1ad365c" length="0x20000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="d29-03.ic66" crc="aeaff456" length="0x100000" map="01" />
+      <part name="d29-04.ic67" crc="01711cfe" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="d29-05.ic68" crc="9b5f7a17" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="d29-06.ic49" crc="eea07bf3" length="0x80000" map="0021" />
+      <part name="d29-07.ic50" crc="db3c094d" length="0x80000" map="2100" />
+    </interleave>
+    <part repeat="3145728">00</part>
+    <part name="d29-08.ic51" crc="d7562851" length="0x80000" />
+    <part repeat="1572864">00</part>
+    <part name="d29-01.ic17" crc="545ac4b3" length="0x200000" />
+    <part repeat="1048576">00</part>
+    <part name="d29-02.ic18" crc="ed894fe1" length="0x100000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>24</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Attack,Jump,Magic,-,-,-,Start,Coin,Service,Pause" default="A,B,X,Start,R,Select,L" count="3" />
+</misterromdescription>

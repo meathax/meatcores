@@ -1,0 +1,46 @@
+<misterromdescription>
+  <name>Land Maker (Ver 2.01J 1998/06/01)</name>
+  <setname>landmakrj</setname>
+  <mameversion>0288</mameversion>
+  <year>1998</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from landmakr. -->
+  <rom index="0" md5="None" zip="landmakrj.zip|landmakr.zip">
+    <interleave output="32">
+      <part name="e61-13.20" crc="0af756a2" length="0x80000" map="0001" />
+      <part name="e61-12.19" crc="636b3df9" length="0x80000" map="0010" />
+      <part name="e61-11.18" crc="279a0ee4" length="0x80000" map="0100" />
+      <part name="e61-10.17" crc="daabf2b2" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e61-14.32" crc="18961bbb" length="0x40000" map="01" />
+      <part name="e61-15.33" crc="2c64557a" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e61-03.12" crc="e8abfc46" length="0x200000" map="01" />
+      <part name="e61-02.08" crc="1dc4a164" length="0x200000" map="10" />
+    </interleave>
+    <part name="e61-01.04" crc="6cdd8311" length="0x200000" />
+    <interleave output="32">
+      <part name="e61-09.47" crc="6ba29987" length="0x200000" map="0021" />
+      <part name="e61-08.45" crc="76c98e14" length="0x200000" map="2100" />
+    </interleave>
+    <part name="e61-07.43" crc="4a57965d" length="0x200000" />
+    <part repeat="2097152">00</part>
+    <part name="e61-04.38" crc="c27aec0c" length="0x200000" />
+    <part name="e61-05.39" crc="83920d9d" length="0x200000" />
+    <part name="e61-06.40" crc="2e717bfe" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>E3</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

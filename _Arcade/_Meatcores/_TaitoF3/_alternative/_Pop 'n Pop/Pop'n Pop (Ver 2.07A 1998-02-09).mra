@@ -1,0 +1,46 @@
+<misterromdescription>
+  <name>Pop'n Pop (Ver 2.07A 1998/02/09)</name>
+  <setname>popnpopu</setname>
+  <mameversion>0288</mameversion>
+  <year>1997</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from popnpop. -->
+  <rom index="0" md5="None" zip="popnpopu.zip|popnpop.zip">
+    <interleave output="32">
+      <part name="e51-12.20" crc="86a237d5" length="0x80000" map="0001" />
+      <part name="e51-11.19" crc="8a49f34f" length="0x80000" map="0010" />
+      <part name="e51-10.18" crc="4bce68f8" length="0x80000" map="0100" />
+      <part name="e51-15.17" crc="1ad77903" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="e51-13.32" crc="3b9e3986" length="0x40000" map="01" />
+      <part name="e51-14.33" crc="1f9a5015" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="e51-03.12" crc="a24c4607" length="0x100000" map="01" />
+      <part name="e51-02.8" crc="6aa8b96c" length="0x100000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="e51-01.4" crc="70347e24" length="0x100000" />
+    <part repeat="1048576">00</part>
+    <interleave output="32">
+      <part name="e51-08.47" crc="3ad41f02" length="0x200000" map="0021" />
+      <part name="e51-07.45" crc="95873e46" length="0x200000" map="2100" />
+    </interleave>
+    <part name="e51-06.43" crc="c240d6c8" length="0x200000" />
+    <part name="e51-04.38" crc="66790f55" length="0x200000" />
+    <part name="e51-05.41" crc="4d08b26d" length="0x200000" />
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>43</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>

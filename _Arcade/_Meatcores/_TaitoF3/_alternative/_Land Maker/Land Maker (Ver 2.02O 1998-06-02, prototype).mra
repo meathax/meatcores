@@ -1,0 +1,86 @@
+<misterromdescription>
+  <name>Land Maker (Ver 2.02O 1998/06/02, prototype)</name>
+  <setname>landmakrp</setname>
+  <mameversion>0288</mameversion>
+  <year>1998</year>
+  <manufacturer>Taito Corporation</manufacturer>
+  <rbf>Arcade-TaitoF3</rbf>
+  <rotation>horizontal</rotation>
+  <!-- Untested clone. MAME 0.288 ROM definitions; layout and controls inherited from landmakr. -->
+  <rom index="0" md5="None" zip="landmakrp.zip|landmakr.zip">
+    <interleave output="32">
+      <part name="mpro-3.60" crc="f92eccd0" length="0x80000" map="0001" />
+      <part name="mpro-2.61" crc="5a26c9e0" length="0x80000" map="0010" />
+      <part name="mpro-1.62" crc="710776a8" length="0x80000" map="0100" />
+      <part name="mpro-0.63" crc="bc71dd2f" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="spro-1.66" crc="18961bbb" length="0x40000" map="01" />
+      <part name="spro-0.65" crc="2c64557a" length="0x40000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="obj0-0.8" crc="4b862c1b" length="0x80000" map="01" />
+      <part name="obj0-1.20" crc="1dc6e1ae" length="0x80000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="obj1-0.7" crc="90502355" length="0x80000" map="01" />
+      <part name="obj1-1.19" crc="a24edb24" length="0x80000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="obj2-0.6" crc="3bffe4b2" length="0x80000" map="01" />
+      <part name="obj2-1.18" crc="1b2a87f3" length="0x80000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="obj3-0.5" crc="3a0e1479" length="0x80000" map="01" />
+      <part name="obj3-1.17" crc="c7e91180" length="0x80000" map="10" />
+    </interleave>
+    <part name="obj0-2.32" crc="94cc01d0" length="0x80000" />
+    <part name="obj1-2.31" crc="c2757722" length="0x80000" />
+    <part name="obj2-2.30" crc="934556ff" length="0x80000" />
+    <part name="obj3-2.29" crc="97f0f777" length="0x80000" />
+    <interleave output="32">
+      <part name="scr0-0.7" crc="da6ba562" length="0x80000" map="0001" />
+      <part name="scr0-1.6" crc="8c201d27" length="0x80000" map="0010" />
+      <part name="scr0-2.5" crc="36756b9c" length="0x80000" map="0100" />
+      <part name="scr0-3.4" crc="4e0274f3" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="32">
+      <part name="scr1-0.19" crc="2689f716" length="0x80000" map="0001" />
+      <part name="scr1-1.18" crc="f3086949" length="0x80000" map="0010" />
+      <part name="scr1-2.17" crc="7841468a" length="0x80000" map="0100" />
+      <part name="scr1-3.16" crc="926ad229" length="0x80000" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="scr0-4.3" crc="5b3cf564" length="0x80000" map="01" />
+      <part name="scr0-5.2" crc="8e1ea0fe" length="0x80000" map="10" />
+    </interleave>
+    <interleave output="16">
+      <part name="scr1-4.15" crc="783b6d10" length="0x80000" map="01" />
+      <part name="scr1-5.14" crc="24aba128" length="0x80000" map="10" />
+    </interleave>
+    <part repeat="2097152">00</part>
+    <part name="snd-0.43" crc="0e5ef5c8" length="0x80000" />
+    <part name="snd-1.44" crc="2998fd65" length="0x80000" />
+    <part name="snd-2.45" crc="da7477ad" length="0x80000" />
+    <part name="snd-3.46" crc="141670b9" length="0x80000" />
+    <part name="snd-4.32" crc="e9dc18f6" length="0x80000" />
+    <part name="snd-5.33" crc="8af91ca8" length="0x80000" />
+    <part name="snd-6.34" crc="6f520b82" length="0x80000" />
+    <part name="snd-7.35" crc="69410f0f" length="0x80000" />
+    <part name="snd-8.20" crc="d98c275e" length="0x80000" />
+    <part name="snd-9.21" crc="82a76cfc" length="0x80000" />
+    <part name="snd-10.22" crc="0345f585" length="0x80000" />
+    <part name="snd-11.23" crc="4caf571a" length="0x80000" />
+    <patch offset="0x1ffff8">ff ff ff ff ff ff 00 03</patch>
+  </rom>
+  <players>2</players>
+  <joystick>8-way</joystick>
+  <rom index="1">
+    <part>E3</part>
+  </rom>
+  <rom index="2">
+    <part>02</part>
+  </rom>
+  <nvram index="254" size="256" />
+  <buttons names="Shoot,-,-,-,-,-,Start,Coin,Service,Pause" default="A,Start,R,Select,L" count="1" />
+</misterromdescription>
