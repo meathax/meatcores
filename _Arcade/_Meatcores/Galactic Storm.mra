@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Built from core source 6989e742c9a9d660db8f0c3b2b5239896a68cba6; RBF SHA-256 2c52449b4bfaa4667df7dfba7fd60d32781dc1474dfd645dd7c8658f6857b6a7; compressed Quartus 17.0.2 seed 9. -->
+<misterromdescription>
+  <name>Galactic Storm (Japan)</name>
+  <setname>galastrm</setname>
+  <mameversion>0289</mameversion>
+  <rbf>Arcade-GalacticStorm</rbf>
+  <year>1992</year>
+  <manufacturer>Taito</manufacturer>
+  <category>Shoot</category>
+  <rotation>horizontal</rotation>
+  <players>1</players>
+  <buttons names="Shot,Shot (alternate),D-Weapon,D-Weapon (alternate),Start,Coin,Service credit,Service menu,Pause/Resume" default="A,B,X,Y,Start,Select,L,R,L2" />
+  <rom index="0" zip="galastrm.zip" md5="d2e9364295f60f15f7827a4ef24e2205">
+    <interleave output="32">
+      <part name="c99_12.ic102" crc="e059d1ee" map="0001" />
+      <part name="c99_15.ic105" crc="7eae8efd" map="0010" />
+      <part name="c99_14.ic104" crc="457ef6b1" map="0100" />
+      <part name="c99_13.ic103" crc="885fcb35" map="1000" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99_22.ic7" crc="b90f7c42" map="01" />
+      <part name="c99_23.ic8" crc="5718ee92" map="10" />
+    </interleave>
+    <part repeat="0x40000">00</part>
+    <part name="c99-11.ic90" crc="26a6926c" />
+    <interleave output="32">
+      <part name="c99-05.ic1" crc="a91ffba4" map="0012" />
+      <part name="c99-06.ic2" crc="812ed3ae" map="1200" />
+    </interleave>
+    <interleave output="64">
+      <part name="c99-02.ic50" crc="81e9fc6f" map="00000021" />
+      <part name="c99-01.ic51" crc="9dda1267" map="00002100" />
+      <part name="c99-04.ic66" crc="a681760f" map="00210000" />
+      <part name="c99-03.ic67" crc="a2807a27" map="21000000" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-08.ic3" crc="fedb4187" map="12" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-09.ic4" crc="ba70b86b" map="12" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-10.ic5" crc="da016f1e" map="12" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-07.ic2" crc="4cc3136f" map="12" offset="0x40000" length="0x40000" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-07.ic2" crc="4cc3136f" map="12" offset="0x0" length="0x40000" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-07.ic2" crc="4cc3136f" map="12" offset="0xc0000" length="0x40000" />
+    </interleave>
+    <interleave output="16">
+      <part name="c99-07.ic2" crc="4cc3136f" map="12" offset="0x80000" length="0x40000" />
+    </interleave>
+    <part repeat="0x400000">00</part>
+  </rom>
+  <rom index="1" zip="galastrm.zip" md5="ba292cd3f9f20b5fefb07f09eb540d4d">
+    <interleave output="16">
+      <part name="eeprom-galastrm.bin" crc="94efa7a6" map="12" />
+    </interleave>
+  </rom>
+  <nvram index="254" size="528" />
+</misterromdescription>
